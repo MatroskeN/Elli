@@ -8,7 +8,8 @@ header {
     background: #fff;
     width: 100%;
     height: 93px;
-
+    z-index: 10;
+    top: 0;
     .header-menu {
         display: flex;
         max-width: 1130px;
@@ -70,5 +71,36 @@ header {
 
             }
         }
+    }
+}
+
+.content{
+    margin-top: 93px;
+    .banner{
+        display: flex;
+        height: 526px;
+        width: 100%;
+        //margin-top: 93px;
+          #slideMain{
+            height: 100%;
+          }
+          .slider{
+            background: #F6F6F6;
+            background-image: url(/images/Mask\ Group.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 0px 10px #fff;
+            p{
+              font-size: 35px;
+              font-weight: 700;
+              color: #fff;
+            }
+          }
     }
 }
