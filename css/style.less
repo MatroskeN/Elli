@@ -4,7 +4,8 @@ a {
 }
 
 header {
-    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     background: #fff;
     width: 100%;
     height: 93px;
@@ -75,7 +76,6 @@ header {
 }
 
 .content{
-    margin-top: 93px;
     .banner{
         display: flex;
         height: 526px;
