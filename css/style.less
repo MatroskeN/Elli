@@ -1,16 +1,82 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/roboto-v20-latin-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/roboto-v20-latin-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/roboto-v20-latin-300.svg#Roboto') format('svg');
+    /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/roboto-v20-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg');
+    /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v20-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/roboto-v20-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/roboto-v20-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/roboto-v20-latin-500.svg#Roboto') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none !important;
     color: #444444;
 }
 
 header {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     background: #fff;
     width: 100%;
     height: 93px;
     z-index: 10;
     top: 0;
+
     .header-menu {
         display: flex;
         max-width: 1130px;
@@ -26,9 +92,16 @@ header {
         }
 
         .menu-head {
-            margin-top: 39px;
+            margin-top: 29px;
             display: flex;
             justify-content: space-between;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #444444;
 
             .par {
                 margin-top: 10px;
@@ -59,9 +132,10 @@ header {
                     margin-top: 7px;
                     margin-left: 11.5px;
                 }
-                .counter{
+
+                .counter {
                     width: 18px;
-                    background:url(/images/Ellipse\ 9.png);
+                    background: url(/images/Ellipse\ 9.png);
                     background-repeat: no-repeat;
                     position: absolute;
                     right: -1px;
@@ -75,18 +149,25 @@ header {
     }
 }
 
-.content{
-    .banner{
+.content {
+    .banner {
         display: flex;
         height: 526px;
         width: 100%;
+
         //margin-top: 93px;
-          #slideMain{
+        #slideMain {
+            position: relative;
             height: 100%;
-          }
-          .slider{
+
+            .left-arrow {}
+
+            .right-arrow {}
+        }
+
+        .slider {
             background: #F6F6F6;
-            background-image: url(/images/Mask\ Group.png);
+            background-image: url(/images/Mask\ Group.jpg);
             background-position: right;
             background-repeat: no-repeat;
             background-size: cover;
@@ -96,11 +177,384 @@ header {
             justify-content: center;
             align-items: center;
             box-shadow: 0px 0px 0px 10px #fff;
-            p{
-              font-size: 35px;
-              font-weight: 700;
-              color: #fff;
+            flex-direction: column;
+            text-align: left;
+
+            .text-box {
+                max-height: 200px;
+                width: 28%;
+                margin-left: -30%;
+                margin-top: -150px;
+
+                h1 {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 38px;
+                    line-height: 45px;
+
+                    color: #444444;
+                }
+
+                h3 {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 23px;
+
+                    color: #444444;
+                }
+
+                .info-butt {
+                    margin-top: 30px;
+                    text-align: center;
+                    width: 179.47px;
+                    height: 42px;
+                    background: #FFA09F;
+                    border-radius: 8px;
+
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 21px;
+                        /* identical to box height */
+                        padding-top: 12px;
+                    }
+
+                    color: #FFFFFF;
+                }
             }
-          }
+
+            p {
+                font-size: 35px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
     }
+
+    .product_block {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 96px;
+        height: 1046px;
+        max-width: 1110px;
+
+        .products {
+            display: flex;
+            flex-direction: column;
+
+            .labels {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                .prod_label {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 34px;
+                    line-height: 15px;
+                    /* identical to box height */
+
+
+                    color: #444444;
+                }
+
+                .view {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 40px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: #444444;
+                }
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .card {
+                    height: 309px;
+                    width: 255px;
+                    //margin-right: 30px;
+                    text-align: center;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+
+                    .card-image {
+                        height: 253px;
+
+                        img {
+                            margin-top: 45px;
+                            height: 143px;
+                            width: 180px;
+                        }
+
+                        border-bottom: #C4C4C4 solid 1px;
+
+                        .card_label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 19px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            color: #444444;
+                        }
+
+                        .card_sublabel {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+
+                            color: #C4C4C4;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                    }
+
+                    .control_buttons {
+                        display: flex;
+                        height: 54px;
+
+                        .price {
+                            display: flex;
+                            flex-direction: row;
+                            width: 50%;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding-top: 20px;
+                            color: #444444;
+                            border-right: 1px solid #C4C4C4;
+
+                            .old_price {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 14px;
+                                /* identical to box height */
+
+                                text-decoration-line: line-through;
+
+                                color: #C4C4C4;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                line-height: 17px;
+                            }
+
+                            .actual_price{
+                                margin-left:15px;
+                                text-align: center;
+                            }
+                        }
+
+                        .shop_butt {
+
+                            width: 50%;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            padding-top: 20px;
+                            color: #FFA09F;
+
+                            &:hover {
+                                background: #FFA09F;
+                                color: #fff;
+                                transition: all 0.4s;
+                                box-sizing: border-box;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .package {
+            display: flex;
+            flex-direction: column;
+            margin-top: 90px;
+
+            .labels {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                .prod_label {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 34px;
+                    line-height: 15px;
+                    /* identical to box height */
+
+
+                    color: #444444;
+                }
+
+                .view {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 40px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: #444444;
+                }
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .card {
+                    height: 309px;
+                    width: 255px;
+                    //margin-right: 30px;
+                    text-align: center;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+
+                    .card-image {
+                        height: 253px;
+
+                        img {
+                            margin-top: 45px;
+                            height: 143px;
+                            width: 180px;
+                        }
+
+                        border-bottom: #C4C4C4 solid 1px;
+
+                        .card_label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 19px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            color: #444444;
+                        }
+
+                        .card_sublabel {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+
+                            color: #C4C4C4;
+                        }
+                    }
+
+                    .control_buttons {
+                        display: flex;
+                        height: 54px;
+
+                        .price {
+                            display: flex;
+                            flex-direction: row;
+                            width: 50%;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding-top: 20px;
+                            color: #444444;
+                            border-right: 1px solid #C4C4C4;
+
+                            .old_price {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 14px;
+                                /* identical to box height */
+
+                                text-decoration-line: line-through;
+
+                                color: #C4C4C4;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                line-height: 17px;
+                            }
+
+                            .actual_price{
+                                margin-left:15px;
+                                text-align: center;
+                            }
+                        }
+
+                        .shop_butt {
+
+                            width: 50%;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            padding-top: 20px;
+                            color: #FFA09F;
+
+                            &:hover {
+                                background: #FFA09F;
+                                color: #fff;
+                                transition: all 0.4s;
+                                box-sizing: border-box;
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
 }
