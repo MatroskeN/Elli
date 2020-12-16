@@ -837,7 +837,7 @@ header {
     footer {
         margin-top: 69px;
         width: 100%;
-        height: 238px;
+        height: auto;
         background: #F6F6F6;
         padding-top: 46px;
         padding-bottom: 41px;
@@ -1787,6 +1787,7 @@ header {
     }
 }
 
+//inside banner
 .left-o-banner {
     margin-top: 93px;
     width: 100%;
@@ -1821,6 +1822,7 @@ header {
     }
 }
 
+//catalog
 .content {
     .catalog-products {
         display: flex;
@@ -1917,6 +1919,7 @@ header {
     }
 }
 
+//card
 .product-content {
     //max-width: 1110px;
     width: 100%;
@@ -2323,4 +2326,227 @@ header {
             }
         }
     }
+}
+
+//about us
+.content {
+    .about-block {
+        max-width: 1110px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        .about {
+            max-width: 546px;
+
+            .about-text {
+                h3 {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+
+                    color: #444444;
+                }
+
+                h1 {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 26px;
+                    /* identical to box height */
+
+
+                    color: #000000;
+
+                    margin-bottom: 35px;
+                }
+
+                p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    color: #000000;
+
+                    margin-bottom: 52px;
+                }
+            }
+
+            .about-form {
+                form {
+                    input {
+                        border: 1px solid #C4C4C4;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        padding: 11px;
+
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 14px;
+                        /* identical to box height */
+
+
+                        color: #444444;
+                    }
+
+                    #name {
+                        width: 255px;
+                        height: 42px;
+                        margin-right: 26px;
+                    }
+
+                    #email {
+                        width: 255px;
+                        height: 42px;
+                    }
+
+                    #phone {
+                        width: 540px;
+                        height: 42px;
+                    }
+
+                    #message {
+                        width: 540px;
+                        height: 189px;
+                        padding: 0 11px 140px;
+                    }
+
+                    #check {
+                        border: 1px solid red;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                    }
+
+                    label {
+                        a {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 16px;
+
+                            color: #444444;
+                            margin-left: 5px;
+
+                            &:hover {
+                                text-decoration: underline !important;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    width: 179.47px;
+                    height: 42px;
+
+                    background: #FFA09F;
+                    border-radius: 8px;
+                    border: transparent;
+
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    /* identical to box height */
+
+
+                    color: #ffffff;
+
+                    &:hover {
+                        background: #fff;
+                        color: #FFA09F;
+                        border: #FFA09F 1px solid;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+        }
+
+        .about-pic {
+            position: relative;
+
+            .parent-pic {
+                position: relative;
+                z-index: 1;
+            }
+
+            .top-leaves {
+                position: absolute;
+                top: -30px;
+                left: -60px;
+                z-index: 0;
+            }
+
+            .bottom-leaves {
+                position: absolute;
+                bottom: 0;
+                right: -62px;
+            }
+        }
+    }
+}
+
+//card
+.card {
+    .prod-table {
+        max-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+
+        table {
+            border: 1px solid #000;
+            border: 1px solid #C4C4C4;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #000000;
+
+            th {
+                text-align: center;
+                background: #F9F9F9;
+                border-radius: 8px 8px 0px 0px;
+            }
+
+            tr {
+                border-bottom: 1px solid #C4C4C4;
+            }
+
+            td {
+                text-align: center;
+
+                .table-price {
+                    margin-right: auto;
+                    margin-left: auto;
+                    display: flex;
+                    border: 1px solid #D1D1D1;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    padding:13px;
+                    p{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
 }
