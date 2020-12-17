@@ -2532,6 +2532,7 @@ header {
 
             td {
                 text-align: center;
+                vertical-align: middle;
 
                 .table-price {
                     margin-right: auto;
@@ -2542,7 +2543,8 @@ header {
                     border-radius: 8px;
                     padding:13px;
                     p{
-                        margin-right: 10px;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 }
             }
@@ -2774,7 +2776,9 @@ header {
             }
             .checker{
                 align-items: center;
+                display: flex;
                 label{
+                    margin-left:10px;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
@@ -2846,4 +2850,638 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 74px;
+}
+
+.mcatalog{
+    .filter {
+        height: 486px;
+        width: 254px;
+        border: 1px solid #C4C4C4;
+        border-radius: 8px;
+        padding: 18px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .first {
+            border-bottom: 1px solid #C4C4C4;
+            margin-bottom: 18px;
+
+            h1 {
+                margin-bottom: 20px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+
+
+                color: #444444;
+            }
+        }
+
+        .sec {
+            border-bottom: 1px solid #C4C4C4;
+            margin-bottom: 27px;
+            padding-bottom: 31px;
+
+            a {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 225%;
+                /* or 31px */
+
+
+                color: #444444;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .third {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 242%;
+            /* or 34px */
+
+
+            color: #444444;
+
+            h1 {
+                margin-bottom: 14px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 225%;
+                /* identical to box height, or 36px */
+
+
+                color: #444444;
+            }
+
+            input {
+                margin-right: 11px;
+            }
+        }
+    }
+    .product-slider{
+        margin-top: 30px;
+    }
+}
+
+.mproducts{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+    h1{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+
+        color: #444444;
+    }
+    .product-info{
+        .butts{
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            button {
+                width: 255px;
+                height: 48px;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 8px;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #444444;
+
+                background: transparent;
+                text-align: center;
+                margin-bottom: 16px;
+
+                &:hover {
+                    color: #FFA09F;
+                    transition: all 0.4s;
+                }
+            }
+        }
+
+        .measures{
+            display: flex;
+            margin-bottom: 20px;
+            .gray{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 21px;
+
+                color: #C4C4C4;
+            }
+            .nogray{
+                margin-left: 10px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 21px;
+
+                color: black;
+            }
+        }
+        .price-block{
+            margin-bottom: 20px;
+            .price{
+                margin-bottom: 20px;
+                .new{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 28px;
+
+                    color: #444444;
+                }
+
+                .old{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    text-decoration-line: line-through;
+                }
+            }
+            .count{
+                padding: 11px;
+                display: flex;
+                justify-content: space-between;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100px;
+                border: 1px solid #D1D1D1;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+
+            button{
+                background: #FFA09F;
+                border-radius: 8px;
+                width: 179.47px;
+                height: 42px;
+                border: transparent;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+
+
+                color: #fff;
+                &:hover{
+                    background: #fff;
+                    color: #FFA09F;
+                    border: 1px solid #FFA09F;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        .text-about{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #444444;
+
+            .link{
+                margin-top: 15px;
+                text-decoration: underline !important;
+                color:black;
+            }
+        }
+
+    }
+    .product-slider{
+        h1{
+            margin-bottom: 15px;
+        }
+    }
+    .line {
+        max-width: 300px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 0px;
+
+        border: 1px solid #C4C4C4;
+        margin-top: 64px;
+        margin-bottom: 30px;
+    }
+
+    .sub-content{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #444444;
+    }
+}
+
+.mabout{
+
+    .about {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        .about-text {
+            h3 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+
+
+                color: #444444;
+            }
+
+            h1 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                /* identical to box height */
+
+
+                color: #000000;
+
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #000000;
+
+                margin-bottom: 52px;
+            }
+        }
+
+        .about-form {
+            form {
+                input {
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                    padding: 11px;
+
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 14px;
+                    /* identical to box height */
+
+
+                    color: #444444;
+                }
+
+                #name {
+                    width: 255px;
+                    height: 42px;
+                    margin-right: 26px;
+                }
+
+                #email {
+                    width: 255px;
+                    height: 42px;
+                }
+
+                #phone {
+                    width: 255px;
+                    height: 42px;
+                }
+
+                #message {
+                    width: 255px;
+                    height: 189px;
+                    padding: 0 11px 140px;
+                }
+
+                #check {
+                    border: 1px solid red;
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                }
+
+                label {
+                    a {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 16px;
+
+                        color: #444444;
+                        margin-left: 5px;
+
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+                    }
+                }
+            }
+
+            button {
+                width: 179.47px;
+                height: 42px;
+
+                background: #FFA09F;
+                border-radius: 8px;
+                border: transparent;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+
+
+                color: #ffffff;
+
+                &:hover {
+                    background: #fff;
+                    color: #FFA09F;
+                    border: #FFA09F 1px solid;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+
+    .about-pic{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.mcart{
+    a{
+        color: #444444 !important;
+    }
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px !important;
+    .prod-table{
+        table{
+            border: 1px solid #C4C4C4;
+            max-width: 300px !important;
+        }
+        .total-block{
+            button{
+                background: #FFA09F;
+                border-radius: 8px;
+                border: transparent;
+                width: 222px;
+                height: 42px;
+                color: #fff;
+                margin-bottom: 10px;
+                &:hover{
+                    background-color: #fff;
+                    color: #FFA09F;
+                    border: 1px solid #FFA09F;
+                    transition: all 0.4s;
+                }
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+
+
+                color: #444444;
+            }
+        }
+    }
+
+    .order-block{
+        label{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #444444;
+        }
+        h1{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #444444;
+        }
+        h2{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #444444;
+        }
+        h3{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #444444;
+        }
+        .dor{
+            display: flex;
+            align-items: center;
+        }
+        input{
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+        .text-box{
+            button{
+
+            }
+        }
+        button{
+            width: 179.47px;
+            height: 42px;
+            border: transparent;
+            background: #FFA09F;
+            border-radius: 8px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+            &:hover{
+                background: #fff;
+                color: #FFA09F;
+                border: 1px solid #FFA09F;
+                transition: all 0.4s;
+            }
+        }
+
+        .checker{
+            display: flex;
+            align-items: center;
+            label{
+                margin-left: 12px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.mcontacts{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    .contact-block{
+        .about-text{
+            h1{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 34px;
+                line-height: 40px;
+                /* identical to box height */
+
+
+                color: #444444;
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #444444;
+                margin-bottom: 20px;
+            }
+        }
+        .about-form{
+            input{
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 8px;
+                width: 100%;
+                margin-bottom: 15px;
+                height: 30px;
+                padding: 11px;
+            }
+            .checker{
+                display: flex;
+                width: 100%;
+                input{
+                    width: 16px;
+                }
+                label{
+                    margin-left: 15px;
+                    width:230px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+
+                    color: #444444;
+                }
+            }
+            button{
+                width: 179.47px;
+                height: 42px;
+                border: transparent;
+                background: #FFA09F;
+                border-radius: 8px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+    
+    
+                color: #FFFFFF;
+    
+                &:hover{
+                    background: #fff;
+                    color: #FFA09F;
+                    border: 1px solid #FFA09F;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
 }
