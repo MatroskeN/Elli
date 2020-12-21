@@ -104,6 +104,9 @@ header {
             .par {
                 margin-top: 10px;
                 margin-right: 66px;
+                a{
+                    color: black !important;
+                }
             }
 
             .phone {
@@ -113,6 +116,7 @@ header {
                 a {
                     padding-bottom: 10px;
                     margin-left: 8px;
+                    color: black !important;
                 }
             }
 
@@ -2502,6 +2506,7 @@ header {
 
 //card
 .card {
+
     .prod-table {
         max-width: 1110px;
         margin-left: auto;
@@ -3023,7 +3028,7 @@ header {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 24px;
+                    font-size: 26px;
                     line-height: 28px;
 
                     color: #444444;
@@ -3033,7 +3038,7 @@ header {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 19px;
                     /* identical to box height */
 
@@ -3051,9 +3056,15 @@ header {
                 box-sizing: border-box;
                 border-radius: 8px;
                 margin-bottom: 20px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 21px;
+                line-height: 21px;
             }
 
             button{
+                margin-left: 20%;
                 background: #FFA09F;
                 border-radius: 8px;
                 width: 179.47px;
@@ -3281,10 +3292,13 @@ header {
     margin-right: auto;
     font-size: 12px !important;
     .prod-table{
-        table{
+        
+        .overtable{
+            overflow-x: auto;
+            .table{
             border: 1px solid #C4C4C4;
             max-width: 300px !important;
-
+            
             tr{
                 th{
                     font-family: Roboto;
@@ -3298,8 +3312,32 @@ header {
 
                     color: #444444;
                 }
+                td{
+                    .table-price{
+                        input{
+                        width: 55px;
+                        height: 30px;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 15px;
+                        color: #444444; 
+                        border: 1px solid #444444;
+                        border-radius: 5px;  
+                        }
+                       
+                    }
+                    .elem{
+                        width: 55px !important;
+                    }
+                }
             }
         }
+        }
+        
+        
         .total-block{
             button{
                 background: #FFA09F;
