@@ -19,8 +19,17 @@
 <body>
     <header>
         <div class="header-menu">
+            <svg class="burger" id="opener" width="30" height="22" viewBox="0 0 30 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="2" x2="28" y2="2" stroke="#444444" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <line x1="2" y1="11" x2="28" y2="11" stroke="#444444" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <line x1="2" y1="20" x2="28" y2="20" stroke="#444444" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
             <div class="header-logo">
-                <a href="">
+                <a href="index.html">
                     <img src="images/mainlogo.png" alt="main">
                 </a>
             </div>
@@ -46,27 +55,6 @@
                 </a>
 
             </div>
-        </div>
-        <div class="mob-header-menu">
-            <svg class="burger" id="opener" width="30" height="22" viewBox="0 0 30 22" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <line x1="2" y1="2" x2="28" y2="2" stroke="#444444" stroke-width="4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <line x1="2" y1="11" x2="28" y2="11" stroke="#444444" stroke-width="4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <line x1="2" y1="20" x2="28" y2="20" stroke="#444444" stroke-width="4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-            <a href=""></a>
-            <img class="mlogo" src="images/logo1 1.png" alt="">
-            <a href="cart.html">
-                <div class="cart">
-                    <img class="cart-pic" src="images/cart.png" alt="cart">
-                    <div class="counter">
-                        3
-                    </div>
-                </div>
-            </a>
         </div>
         <div id="opened" class="open-burger">
             <h3>
@@ -98,7 +86,7 @@
         <h1>Obchod</h1>
         <h4>Domov / Obchod / </h4>
     </div>
-    <div class="content">
+    <div class="content catalog-content">
         <div class="product_block catalog-products">
             <div class="filter">
                 <div class="first">
@@ -119,240 +107,228 @@
                 </div>
             </div>
             <div class="products">
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
                     </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card2.png" alt="card2">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Pregna bio select 1</div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card3.png" alt="card3">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Femagyn komplex</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price">27.99 € </div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
                     </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card2.png" alt="card2">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Pregna bio select 1</div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card3.png" alt="card3">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Femagyn komplex</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price">27.99 € </div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
                     </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card2.png" alt="card2">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Pregna bio select 1</div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card3.png" alt="card3">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Femagyn komplex</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price">27.99 € </div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
                     </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card2.png" alt="card2">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Pregna bio select 1</div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card3.png" alt="card3">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Femagyn komplex</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price">27.99 € </div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
                     </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card2.png" alt="card2">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Pregna bio select 1</div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card3.png" alt="card3">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Femagyn komplex</div>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price">27.99 € </div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
-                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/card1.png" alt="card1">
-                            <div class="card_label">Produckt</div>
-                            <div class="card_sublabel">Papilocare</div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
-                        <div class="control_buttons">
-                            <div class="price">
-                                <div class="old_price"></div>
-                                <div class="actual_price">22.99 €</div>
-                            </div>
-                            <div class="shop_butt">Shop now</div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
                         </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/card1.png" alt="card1">
+                        <div class="card_label">Produckt</div>
+                        <div class="card_sublabel">Papilocare</div>
+                    </div>
+                    <div class="control_buttons">
+                        <div class="price">
+                            <div class="old_price"></div>
+                            <div class="actual_price">22.99 €</div>
+                        </div>
+                        <div class="shop_butt">Shop now</div>
                     </div>
                 </div>
             </div>
@@ -429,24 +405,6 @@
         </footer>
     </div>
     <div class="mob-content mcatalog">
-        <div class="filter">
-            <div class="first">
-                <h1>Výber podľa kategórie</h1>
-            </div>
-            <div class="sec">
-                <a href="">Dezinfekčné prostriedky</a>
-                <a href="">BEZPLATNÝ DOVOZ Nutričnej Výživy</a>
-                <a href="">Výživové doplnky</a>
-                <a href="">Pomôcky</a>
-            </div>
-            <div class="third">
-                <h1>Výrobca</h1>
-                <input type="checkbox"> FOREX SLOVAKIA<br>
-                <input type="checkbox"> Gedeon Richter<br>
-                <input type="checkbox"> IBSA<br>
-                <input type="checkbox"> myelli<br>
-            </div>
-        </div>
         <div class="product-slider">
             <div class="mob-products">
                 <div class="swiper-container" id="slideMain">
