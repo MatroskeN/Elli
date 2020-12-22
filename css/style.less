@@ -1045,7 +1045,112 @@ header {
     .content {
         display: none;
     }
-
+    .mfooter {
+        display: flex !important;
+        height: 626px;
+        width: 320px;
+        padding-top: 36px;
+        padding-left: 14px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 130px;
+    
+        .first {
+            margin-bottom: 1px;
+            padding-left: -14px !important;
+        }
+    
+        .foot {
+            display: flex;
+            flex-direction: column;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+    
+            color: #444444;
+    
+            h3 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+    
+    
+                color: #444444;
+                margin-bottom: 15px;
+                margin-top: 23px;
+            }
+    
+            a {
+                margin-top: 7px;
+                color: #444444 !important;
+            }
+    
+            p {
+                margin-top: 7px;
+            }
+    
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                margin-top: 25px;
+    
+                .facebook {
+                    margin-left: 10px;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #444444;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+    
+                    svg {
+                        margin-top: 6px;
+                        margin-left: 6.5px;
+                    }
+    
+                    &:hover {
+                        background: white;
+                        transition: all 0.4s;
+                    }
+                }
+    
+                .inst {
+                    margin-left: 19px;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #444444;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+    
+                    svg {
+                        margin-top: 6px;
+                        margin-left: 6.5px;
+                    }
+    
+                    &:hover {
+                        background: white;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+        }
+    
+        .fourth {
+            a {
+                font-size: 18px;
+                display: flex;
+    
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
     header {
         height: 59px;
 
@@ -1910,7 +2015,9 @@ header {
         }
     }
 }
-
+.mfooter{
+    display: none;
+}
 //inside banner
 .left-o-banner {
     margin-top: 93px;
@@ -2992,7 +3099,7 @@ header {
                     }
                 }
             }
-            h1{
+            .h1{
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
@@ -3815,4 +3922,9 @@ header {
             color: #FFFFFF !important;
         }
     }
+}
+
+.ex{
+    border:none;
+    background-color: transparent;
 }
